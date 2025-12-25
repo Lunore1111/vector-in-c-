@@ -126,6 +126,8 @@ v_push(&lt,lt.arr,40);
 v_insert(&lt,lt.arr,3,25);
 v_display(&lt,lt.arr,lt.size);
 
+printf("%d",lt.capacity);
+
  free(v.arr);
   return 0;
 }
