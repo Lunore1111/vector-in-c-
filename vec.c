@@ -116,15 +116,6 @@ v_insert(&v,v.arr,2,69);
 v_display(&v,v.arr,v.size);
 
 printf("%c",'\n');
-vec lt;
-ni_vector(&lt);
-
-v_push(&lt,lt.arr,10);
-v_push(&lt,lt.arr,20);
-v_push(&lt,lt.arr,30);
-v_push(&lt,lt.arr,40);
-v_insert(&lt,lt.arr,3,25);
-v_display(&lt,lt.arr,lt.size);
 
 
 free(v.arr);
