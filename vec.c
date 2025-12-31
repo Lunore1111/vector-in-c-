@@ -28,11 +28,7 @@ void i_vector(vec *v,int n)
     v->arr=(int*)malloc(n*sizeof(int));
     v->current=0;
     v->capacity=0;
-    for(int i=0;i<n;i++){
-        scanf("%d",&v->arr[i]);
-        v->current++;
-    }
-    v->capacity = n;
+        v->capacity = n;
   }
 int v_size(vec *v,int *arr){
 
@@ -106,16 +102,9 @@ int main (){
 
  vec v;
 
- ni_vector(&v);
-
-v_push(&v,v.arr,1);
-v_push(&v,v.arr,2);
-v_push(&v,v.arr,3);
-v_push(&v,v.arr,4);
-v_insert(&v,v.arr,2,69);
-v_display(&v,v.arr,v.size);
-
-printf("%c",'\n');
+  i_vector(&v,5);
+  for(int i=0;i<5;i++) scanf("%d",&v.arr[i]);
+  v_display(&v,v.arr,5);
 
 
 free(v.arr);
